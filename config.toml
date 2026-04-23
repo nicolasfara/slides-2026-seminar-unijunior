@@ -1,6 +1,6 @@
 baseURL = "https://nicolasfarabegoli.it/slides-2026-seminar-unijunior/"
-languageCode = "en-us"
-title = "A Hugo theme for creating Reveal.js presentations"
+languageCode = "it-it"
+title = "La Robotica di Sciame - Unijunior"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
