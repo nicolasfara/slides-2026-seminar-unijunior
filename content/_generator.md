@@ -42,10 +42,10 @@ outputs = ["Reveal"]
 ---
 
 # Cosa hanno in comune tutti questi video?  🤔
-- {{% fragment %}} **Super gioco di squadra!** Sono *tantissimi* e collaborano tutti insieme 🤝 {{% /fragment %}}
-- {{% fragment %}} **Si muovono all'unisono!** Sembrano un'unica creatura gigante in *perfetta sincronia* 🌊 {{% /fragment %}}
+- {{% fragment %}} **Gioco di squadra!** Sono *tantissimi* e collaborano tutti insieme 🤝 {{% /fragment %}}
+- {{% fragment %}} **Si muovono tutti insieme!** Sembrano un'unica creatura gigante che fa una *danza perfetta* 🌊 {{% /fragment %}}
 - {{% fragment %}} **Nessun capo al comando!** Non c'è un boss o un direttore d'orchestra che *dà gli ordini* agli altri 🚫👑 {{% /fragment %}}
-- {{% fragment %}} **Zero parole, ma si capiscono al volo!** Usano segnali semplici, come *guardare* dove va il vicino o usare la *luce* 💡 {{% /fragment %}}
+- {{% fragment %}} **Zero parole, ma si capiscono al volo!** Usano segnali semplici, come *guardare* dove va l'amico o usare la *luce* 💡 {{% /fragment %}}
 - {{% fragment %}} **Regole facili, risultati pazzeschi!** Ognuno fa una cosa semplicissima, ma *unendo le forze* creano vere e proprie magie! ✨ {{% /fragment %}}
 ---
 
@@ -59,14 +59,14 @@ outputs = ["Reveal"]
 # Proviamo Insieme!
 
 - Ora tocca a voi! Ci trasformeremo in un vero e proprio *sciame di lucciole*! 🌟
-- Ogni lucciola (cioè *ognuno di voi*!) dovrà seguire una regola super semplice per "accendersi" o "spegnersi" 💡
+- Ogni lucciola (cioè *ognuno di voi*!) dovrà seguire una regola molto semplice per "accendersi" o "spegnersi" 💡
 - **Attenzione:** è *vietato* parlare o guardare le lucciole lontane da voi! 🤫👀
 
 ---
 
 # La Natura come Maestra 🌿 
 
-- Lo sapevate che gli ingegneri sono dei veri e propri super **"copioni"**? 🤫
+- Lo sapevate che gli ingegneri sono dei veri e propri **"copioni"**? 🤫
 - Tranquilli, non copiano i compiti a scuola! *"Rubano"* le idee geniali e i superpoteri della natura per inventare tecnologie pazzesche! 🚀
 
 {{% multicol %}}
@@ -84,7 +84,7 @@ outputs = ["Reveal"]
 {{% /col %}}
 {{% /multicol %}}
 
-Il treno giapponese Shinkansen ha copiato il becco del **Martin Pescatore** per essere *super veloce* e non fare rumore!
+Un treno giapponese ha copiato il becco del **Martin Pescatore** per essere *super veloce* e non fare rumore!
 
 ---
 
@@ -114,11 +114,9 @@ E se unissimo **tanti piccoli robot** facendoli muovere come uno *sciame*?
 # Come parliamo con i robot? 🤔
 - {{% fragment %}} Immaginate di dover dare ordini a uno sciame intero... cosa direste ai robottini? 🗣️ {{% /fragment %}}
 - {{% fragment %}} Noi informatici siamo un po' come dei *"sussurratori di robot"*, ma loro non parlano la nostra lingua! 💻 {{% /fragment %}}
-- {{% fragment %}} Dobbiamo inventare un modo *super ingegnoso* per farli collaborare, proprio come fanno le lucciole nel prato o i pesci nell'oceano! 🐟✨ {{% /fragment %}}
+- {{% fragment %}} Dobbiamo inventare un modo *ingegnoso* per farli collaborare, proprio come fanno le lucciole nel prato o i pesci nell'oceano! 🐟✨ {{% /fragment %}}
 
 ---
-
-{{< slide background-image="https://danysk.github.io/slides-2025-unito-progmob-collektive/idea-warning.png" background-opacity="0.3">}}
 
 # Un problema non da poco... 🚨
 
@@ -148,7 +146,7 @@ Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 
 ---
 
-{{< slide background-video="https://github.com/DanySK/slides-2024-acsos-imageonomics/raw/master/content/nonnadir.mkv" background-video-loop="true" background-video-muted="true" background-opacity="0.4" >}}
+{{< slide background-video="https://github.com/DanySK/slides-2024-acsos-imageonomics/raw/master/content/nonnadir.mkv" background-video-loop="true" background-video-muted="true" background-opacity="0.2" >}}
 
 
 # Ma perché lo facciamo? A cosa serve? 🌍
@@ -156,20 +154,20 @@ Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 
 - {{% fragment %}} Immaginate droni che lavorano in squadra per **proteggere gli animali selvatici**! 🦁🐘 {{% /fragment %}}
 
-- {{% fragment %}} Si scambiano messaggi *velocissimi* per trovare gli animali nel loro ambiente naturale senza spaventarli, come dei veri *super-agenti segreti* della natura! 🕵️‍♀️🍃 {{% /fragment %}}
+- {{% fragment %}} Si scambiano messaggi *velocissimi* per trovare gli animali nel loro ambiente naturale senza spaventarli{{% /fragment %}}
 
 - {{% fragment %}} Possono anche aiutare a monitorare le foreste, a prevedere i disastri naturali o a consegnare medicine in posti difficili da raggiungere! 🌳🌪️💊 {{% /fragment %}}
 
 ---
 
-{{< slide background-video="video/martian.mp4" background-video-loop="true" background-video-muted="true" background-opacity="0.4" >}}
+{{< slide background-video="video/martian.mp4" background-video-loop="true" background-video-muted="true" background-opacity="0.2" >}}
 
 # Verso l'infinito e oltre! 🪐🚀
 
 
 - {{% fragment %}} Dove arriveremo in futuro? {{% /fragment %}}
-- {{% fragment %}} Magari gli sciami di robot ci aiuteranno a **esplorare e colonizzare altri pianeti**! {{% /fragment %}}
-- {{% fragment %}} Potrebbero costruire basi spaziali lavorando insieme come un esercito di *instancabili formiche marziane* 👽🏰 {{% /fragment %}}
+- {{% fragment %}} Magari gli sciami di robot ci aiuteranno a **esplorare e costruire città su altri pianeti**! {{% /fragment %}}
+- {{% fragment %}} Potrebbero preparare basi spaziali lavorando insieme come un esercito di *instancabili formiche marziane* 👽🏰 {{% /fragment %}}
 
 ---
 
