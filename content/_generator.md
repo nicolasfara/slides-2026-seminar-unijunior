@@ -10,95 +10,94 @@ outputs = ["Reveal"]
 # La Robotica di Sciame
 ### Come la Natura insegna ai Robot a collaborare 🤖✨
 
-**Danilo Pianini** & Team
-*Unijunior*
+**Danilo Pianini, Nicolas Farabegoli, Gianluca Aguzzi, Davide Domini**
+
+*Unijunior* -- 2026
 
 ---
 
-{{< slide background-video="https://danysk.github.io/Slides-2019-OYM/video/stampede.mp4" background-video-loop="true" background-video-muted="true" background-opacity="0.6">}}
+#  Cosa vi viene in mente se dico la parola "sciame"? 🤔
 
-# Vi siete mai accorti di come si muovono gli animali?
 
-Spesso gli animali si muovono **insieme**, come se fossero una squadra perfetta!
-
----
-
-# I Maestri del Lavoro di Squadra 🐜
-
-{{% multicol %}}
-{{% col %}}
-![Formiche](https://danysk.github.io/Slides-2019-OYM/img/ants.jpg)
-{{% /col %}}
-{{% col %}}
-![Termiti](https://danysk.github.io/Slides-2019-OYM/img/termites.jpg)
-{{% /col %}}
-{{% col %}}
-![Lucciole](https://danysk.github.io/Slides-2019-OYM/img/firefly.jpg)
-{{% /col %}}
-{{% /multicol %}}
-
-Piccolissimi, ma insieme possono fare cose incredibili!
+- {{% fragment %}} Tantissime api che *ronzano*? 🐝 {{% /fragment %}}
+- {{% fragment %}} Una *lunga fila* di formichine lavoratrici? 🐜 {{% /fragment %}}
+- {{% fragment %}} ... Scopriamo *insieme* cosa sanno fare! 🤩 {{% /fragment %}}
 
 ---
 
-# Formiche nel labirinto!
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/N4BOOfqDbvM" title="Banchi di Sardine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+ 
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/_i2NboauXBQ" title="La danza degli Storni Sardegna 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/tDQw21ntR64" title="Mesmerising Mass Sheep Herding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/Z7VZlaHWR1s?t=87" title="Fireflies Put on a Spectacular Mating Dance | Short Film Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+# Cosa hanno in comune tutti questi video?  🤔
+- {{% fragment %}} **Super gioco di squadra!** Sono *tantissimi* e collaborano tutti insieme 🤝 {{% /fragment %}}
+- {{% fragment %}} **Si muovono all'unisono!** Sembrano un'unica creatura gigante in *perfetta sincronia* 🌊 {{% /fragment %}}
+- {{% fragment %}} **Nessun capo al comando!** Non c'è un boss o un direttore d'orchestra che *dà gli ordini* agli altri 🚫👑 {{% /fragment %}}
+- {{% fragment %}} **Zero parole, ma si capiscono al volo!** Usano segnali semplici, come *guardare* dove va il vicino o usare la *luce* 💡 {{% /fragment %}}
+- {{% fragment %}} **Regole facili, risultati pazzeschi!** Ognuno fa una cosa semplicissima, ma *unendo le forze* creano vere e proprie magie! ✨ {{% /fragment %}}
+---
+
+# Umani vs Sciami: Chi è più intelligente? 🧠🐜
+
 
 <iframe width="1000" height="500" src="https://www.youtube.com/embed/ZHpu7ngQxwE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-# Anche nel cielo e nel mare! 🐟🦅
+# Proviamo Insieme!
 
-{{% multicol %}}
-{{% col %}}
-Gli uccelli formano stormi giganteschi che danzano nel cielo.
-I pesci si muovono in banchi per confondere i predatori.
-
-Tutto questo **senza** avere un capo che dia gli ordini!
-{{% /col %}}
-{{% col %}}
-{{< youtube id="veQ2ilQrzMU?start=20" >}}
-{{% /col %}}
-{{% /multicol %}}
+- Ora tocca a voi! Ci trasformeremo in un vero e proprio *sciame di lucciole*! 🌟
+- Ogni lucciola (cioè *ognuno di voi*!) dovrà seguire una regola super semplice per "accendersi" o "spegnersi" 💡
+- **Attenzione:** è *vietato* parlare o guardare le lucciole lontane da voi! 🤫👀
 
 ---
 
 # La Natura come Maestra 🌿 
-### (Biomimetica)
 
-Spesso gli ingegneri "copiano" le idee dalla natura!
+- Lo sapevate che gli ingegneri sono dei veri e propri super **"copioni"**? 🤫
+- Tranquilli, non copiano i compiti a scuola! *"Rubano"* le idee geniali e i superpoteri della natura per inventare tecnologie pazzesche! 🚀
 
 {{% multicol %}}
 {{% col %}}
+**Prima**
 ![Treno proiettile](https://danysk.github.io/Slides-2019-OYM/img/500nozomi.jpg)
 {{% /col %}}
 {{% col %}}
+**Dopo**
 ![Treno proiettile nuovo](https://danysk.github.io/Slides-2019-OYM/img/700series.jpg)
+{{% /col %}}
+{{% col %}}
+**L'ispirazione!**
+{{< youtube id="veQ2ilQrzMU?start=20" >}}
 {{% /col %}}
 {{% /multicol %}}
 
-Il treno giapponese Shinkansen ha copiato il becco del **Martin Pescatore** per essere più veloce e silenzioso!
+Il treno giapponese Shinkansen ha copiato il becco del **Martin Pescatore** per essere *super veloce* e non fare rumore!
 
 ---
 
-# E i piedi del Geco? 🦎
-
-{{< youtube id="uhfXbSSrabw" >}}
-
-Ci hanno permesso di creare materiali super-appiccicosi!
-
----
-
-# I Robot prendono appunti 📝
+# Torniamo ai Robot! 🤖
 
 {{% multicol %}}
 {{% col %}}
 {{< youtube id="tf7IEVTDjng" >}}
-Robot come **Spot** imitano gli animali a quattro zampe.
+Robot come **Spot** *imitano* gli animali a quattro zampe
 {{% /col %}}
 {{% col %}}
 {{< youtube id="rVlhMGQgDkY" >}}
-Robot come **Atlas** imitano noi umani!
+Robot come **Atlas** *imitano* noi umani!
 {{% /col %}}
 {{% /multicol %}}
 
@@ -106,9 +105,16 @@ Robot come **Atlas** imitano noi umani!
 
 # La Magia dei Droni ✨
 
-E se unissimo **tanti piccoli robot** facendoli muovere come uno sciame?
+E se unissimo **tanti piccoli robot** facendoli muovere come uno *sciame*?
 
-Ecco che otteniamo meravigliose **coreografie di droni**! Disegnano figure luminose nel cielo, comportandosi esattamente come uno stormo di uccelli.
+<iframe width="1840" height="850" src="https://www.youtube.com/embed/MJmnSyzRUzQ" title="Shangai, ecco lo spettacolo dei droni di Capodanno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+# Come parliamo con i robot? 🤔
+- {{% fragment %}} Immaginate di dover dare ordini a uno sciame intero... cosa direste ai robottini? 🗣️ {{% /fragment %}}
+- {{% fragment %}} Noi informatici siamo un po' come dei *"sussurratori di robot"*, ma loro non parlano la nostra lingua! 💻 {{% /fragment %}}
+- {{% fragment %}} Dobbiamo inventare un modo *super ingegnoso* per farli collaborare, proprio come fanno le lucciole nel prato o i pesci nell'oceano! 🐟✨ {{% /fragment %}}
 
 ---
 
@@ -116,55 +122,57 @@ Ecco che otteniamo meravigliose **coreografie di droni**! Disegnano figure lumin
 
 # Un problema non da poco... 🚨
 
-Programmare uno sciame è **molto** difficile!
-Se diamo a un robot un'istruzione sbagliata... **tutti** i robot sbaglieranno!
-
-### *Piccoli errori causano disastri globali!*
-
----
-
-# Aiutare la natura con la tecnologia 🌍
-
-Gli sciami di droni possono collaborare tra loro per **tracciare e proteggere gli animali selvatici**! 
-
-Si scambiano informazioni in tempo reale per trovare gli animali senza disturbarli, usando una vera e propria intelligenza collettiva.
+Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
+- {{% fragment %}} Se diamo a un robot il comando sbagliato... **tutti** i robot *copieranno l'errore*! 😱 {{% /fragment %}}
+- {{% fragment %}} ### *Un piccolo sbaglio = un disastro gigante!* 💥 {{% /fragment %}}
 
 ---
 
-# Insegnare ai robot a muoversi insieme 💻
+# Il nostro trucco segreto! 🕵️‍♂️💡
+- {{% fragment %}}  Nel nostro laboratorio, abbiamo inventato una specie di **"lingua aliena"**! {{% /fragment %}}
+- {{% fragment %}} Si chiama **Aggregate Programming** ed è un linguaggio speciale che i robot capiscono *al volo* per muoversi tutti insieme {{% /fragment %}}
 
-Con speciali programmi (come **MacroSwarm**), possiamo guidare migliaia di robot!
+{{% fragment %}} <video width="1080" height="450" autoplay controls loop><source data-src="video/macroswarm.webm" type="video/webm" /></video> {{% /fragment %}}
 
-<video loop playsinline autoplay muted style="max-width: 1000px; display: inline-block;">
-  <source src="https://alchemistsimulator.github.io/home-animation.mp4" type="video/mp4">
-</video>
+--- 
+
+# Facciamo una prova! 📏
+- {{% fragment %}} Come fanno i robot a capire quanto sono lontani da un certo punto? {{% /fragment %}}
+- {{% fragment %}} Proviamo a scoprirlo con un altro gioco! 🏃‍♂️🏃‍♀️ {{% /fragment %}}
 
 ---
 
-# I robottini in azione! 🚀
+# I nostri mini-robot in azione! 🚀
 
 <video width="1080" height="450" autoplay controls loop><source data-src="https://protelis.github.io/images/mapehd-small-h264.mp4" type="video/webm" /></video>
 
-Ognuno pensa per sé, ma tutti collaborano per lo stesso obiettivo!
+---
+
+{{< slide background-video="https://github.com/DanySK/slides-2024-acsos-imageonomics/raw/master/content/nonnadir.mkv" background-video-loop="true" background-video-muted="true" background-opacity="0.4" >}}
+
+
+# Ma perché lo facciamo? A cosa serve? 🌍
+
+
+- {{% fragment %}} Immaginate droni che lavorano in squadra per **proteggere gli animali selvatici**! 🦁🐘 {{% /fragment %}}
+
+- {{% fragment %}} Si scambiano messaggi *velocissimi* per trovare gli animali nel loro ambiente naturale senza spaventarli, come dei veri *super-agenti segreti* della natura! 🕵️‍♀️🍃 {{% /fragment %}}
+
+- {{% fragment %}} Possono anche aiutare a monitorare le foreste, a prevedere i disastri naturali o a consegnare medicine in posti difficili da raggiungere! 🌳🌪️💊 {{% /fragment %}}
 
 ---
 
-# Fino alle Stelle! 🪐
+{{< slide background-video="video/martian.mp4" background-video-loop="true" background-video-muted="true" background-opacity="0.4" >}}
 
-A cosa servirà tutto questo?
-In futuro, gli sciami di robot ci aiuteranno a **colonizzare altri pianeti**! 
-Costruiranno basi spaziali lavorando insieme come un esercito di instancabili formiche marziane.
+# Verso l'infinito e oltre! 🪐🚀
 
----
 
-# Morfogenesi: Creare la Forma 🔵⬛
-
-Proprio come le cellule del nostro corpo si uniscono per formare noi stessi...
-i robot possono decidere da soli come disporsi per creare figure giganti!
-
-<img src="https://raw.githubusercontent.com/danysk/course-2026-micro-macro/master/content/img/shapes.png" alt="shapes" style="display:block;max-width:80%;height:auto;margin:auto;" />
+- {{% fragment %}} Dove arriveremo in futuro? {{% /fragment %}}
+- {{% fragment %}} Magari gli sciami di robot ci aiuteranno a **esplorare e colonizzare altri pianeti**! {{% /fragment %}}
+- {{% fragment %}} Potrebbero costruire basi spaziali lavorando insieme come un esercito di *instancabili formiche marziane* 👽🏰 {{% /fragment %}}
 
 ---
+
 
 # Domande? 🙋‍♂️🙋‍♀️
 

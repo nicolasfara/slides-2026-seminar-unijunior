@@ -18,9 +18,10 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Dancing+Script');
 // @import url('https://fonts.googleapis.com/css2?family=Satisfy');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 
 // Display
-// @import url('https://fonts.googleapis.com/css2?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One');
 
 // Monospace
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata');
@@ -44,13 +45,18 @@ $headingFont: 'Signika Negative';
 // $mainFont: 'Open Sans';
 // $headingFont: 'Open Sans';
 
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
 $headingLetterSpacing: normal;
 $headingFontWeight: 600;
 $linkColor: #2690e7;
 $linkColorHover: lighten( $linkColor, 25% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
-$detailBackgroundColor: #dae5e9;
-$logo: url("../example-background-neg.svg");
+$detailBackgroundColor: #666;
+$logo: url("../example-background.svg");
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
@@ -74,12 +80,17 @@ section.has-light-background {
 .reveal strong,
 .reveal b {
 	font-weight: bold;
-	color: #b81f0b
+	color: #b81f0b;
+	font-family: 'Fredoka One', cursive;
+	font-size: 1.15em;
+	letter-spacing: 1px;
 }
 
 .reveal em {
 	font-style: italic;
-	color: #039418
+	color: #039418;
+	font-family: 'Kalam', cursive;
+	font-size: 1.1em;
 }
 
 .reveal section img {
@@ -267,7 +278,7 @@ kbd {
 }
 
 .reveal .slide-background:after {
-	content: "Authors - Title - Venue Year";
+	content: "";
 	position: absolute;
 	bottom: 2.5%;
 	right: 6%;
@@ -280,19 +291,20 @@ kbd {
   // Multicolumn styling
 
   .reveal div.col {
-	// draw a red border
-	// border: 1px solid red;
-	text-align: left;
-	border: .2em dashed $detailBackgroundColor;
-	border-style: double;
+	text-align: center;
+	align-items: center;
+	border: none;
+	background: rgba(0, 0, 0, 0.03);
 	border-radius: 1em;
 	padding: 0.5em;
+	margin: 1em;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .reveal div.container {
 	// border: 1px solid red;
 	align-self: center;
-	min-width: 90%;
+	min-width: 100%;
 	margin-right: 5%;
 	margin-left: 5%;
 	margin-top: 1em;
