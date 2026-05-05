@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="/slides-2026-seminar-unijunior/reveal-js/dist/reset.css">
 <link rel="stylesheet" href="/slides-2026-seminar-unijunior/reveal-js/dist/reveal.css">
-  <link rel="stylesheet" href="/slides-2026-seminar-unijunior/css/custom-theme.min.4cc29c22be6db151549c1d217730b6c131a47e4639510f0e6fbc97909fe39fcc.css" id="theme"><link rel="stylesheet" href="/slides-2026-seminar-unijunior/highlight-js/solarized-dark.min.css">
+  <link rel="stylesheet" href="/slides-2026-seminar-unijunior/css/custom-theme.min.2215676ce282792c34ae21d20cb1d2beace339edba5e7a013de797195178ce08.css" id="theme"><link rel="stylesheet" href="/slides-2026-seminar-unijunior/highlight-js/solarized-light.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oxygen Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu Mono" rel="stylesheet">
@@ -27,116 +27,264 @@
 
     <section><h1 id="la-robotica-di-sciame">La Robotica di Sciame</h1>
 <h3 id="come-la-natura-insegna-ai-robot-a-collaborare-">Come la Natura insegna ai Robot a collaborare 🤖✨</h3>
-<p><strong>Danilo Pianini</strong> &amp; Team
-<em>Unijunior</em></p>
-</section>
-
-<section data-noprocess="" data-shortcode-slide="" data-background-opacity="0.6" data-background-video="https://danysk.github.io/Slides-2019-OYM/video/stampede.mp4" data-background-video-loop="true" data-background-video-muted="true">
-  
-<h1 id="vi-siete-mai-accorti-di-come-si-muovono-gli-animali">Vi siete mai accorti di come si muovono gli animali?</h1>
-<p>Spesso gli animali si muovono <strong>insieme</strong>, come se fossero una squadra perfetta!</p>
+<p><strong>Danilo Pianini, Nicolas Farabegoli, Gianluca Aguzzi, Davide Domini</strong></p>
+<p><em>Unijunior</em> – 2026</p>
 </section><section>
-<h1 id="i-maestri-del-lavoro-di-squadra-">I Maestri del Lavoro di Squadra 🐜</h1>
+<h1 id="cosa-vi-viene-in-mente-se-dico-la-parola-sciame-">Cosa vi viene in mente se dico la parola “sciame”? 🤔</h1>
+<ul>
+<li>
 
-<div class="container w-100 m-0 p-0">
-    <div class="row "><div class="col "><p><img src="https://danysk.github.io/Slides-2019-OYM/img/ants.jpg" alt="Formiche"></p>
-</div>
-<div class="col "><p><img src="https://danysk.github.io/Slides-2019-OYM/img/termites.jpg" alt="Termiti"></p>
-</div>
-<div class="col "><p><img src="https://danysk.github.io/Slides-2019-OYM/img/firefly.jpg" alt="Lucciole"></p>
-</div>
-</div>
-</div>
-<p>Piccolissimi, ma insieme possono fare cose incredibili!</p>
+<span class="fragment ">
+  Tantissime api che <em>ronzano</em>? 🐝
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  Una <em>lunga fila</em> di formichine lavoratrici? 🐜
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  … Scopriamo <em>insieme</em> cosa sanno fare! 🤩
+</span>
+</li>
+</ul>
 </section><section>
-<h1 id="formiche-nel-labirinto">Formiche nel labirinto!</h1>
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/N4BOOfqDbvM" title="Banchi di Sardine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</section><section>
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/_i2NboauXBQ" title="La danza degli Storni Sardegna 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</section><section>
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/tDQw21ntR64" title="Mesmerising Mass Sheep Herding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</section><section>
+<iframe width="1840" height="1035" src="https://www.youtube.com/embed/Z7VZlaHWR1s?t=87" title="Fireflies Put on a Spectacular Mating Dance | Short Film Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</section><section>
+<h1 id="cosa-hanno-in-comune-tutti-questi-video--">Cosa hanno in comune tutti questi video?  🤔</h1>
+<ul>
+<li>
+
+<span class="fragment ">
+  <strong>Super gioco di squadra!</strong> Sono <em>tantissimi</em> e collaborano tutti insieme 🤝
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  <strong>Si muovono all’unisono!</strong> Sembrano un’unica creatura gigante in <em>perfetta sincronia</em> 🌊
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  <strong>Nessun capo al comando!</strong> Non c’è un boss o un direttore d’orchestra che <em>dà gli ordini</em> agli altri 🚫👑
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  <strong>Zero parole, ma si capiscono al volo!</strong> Usano segnali semplici, come <em>guardare</em> dove va il vicino o usare la <em>luce</em> 💡
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  <strong>Regole facili, risultati pazzeschi!</strong> Ognuno fa una cosa semplicissima, ma <em>unendo le forze</em> creano vere e proprie magie! ✨
+</span>
+</li>
+</ul>
+</section><section>
+<h1 id="umani-vs-sciami-chi-è-più-intelligente-">Umani vs Sciami: Chi è più intelligente? 🧠🐜</h1>
 <iframe width="1000" height="500" src="https://www.youtube.com/embed/ZHpu7ngQxwE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </section><section>
-<h1 id="anche-nel-cielo-e-nel-mare-">Anche nel cielo e nel mare! 🐟🦅</h1>
+<h1 id="proviamo-insieme">Proviamo Insieme!</h1>
+<ul>
+<li>Ora tocca a voi! Ci trasformeremo in un vero e proprio <em>sciame di lucciole</em>! 🌟</li>
+<li>Ogni lucciola (cioè <em>ognuno di voi</em>!) dovrà seguire una regola super semplice per “accendersi” o “spegnersi” 💡</li>
+<li><strong>Attenzione:</strong> è <em>vietato</em> parlare o guardare le lucciole lontane da voi! 🤫👀</li>
+</ul>
+</section><section>
+<h1 id="la-natura-come-maestra-">La Natura come Maestra 🌿</h1>
+<ul>
+<li>Lo sapevate che gli ingegneri sono dei veri e propri super <strong>“copioni”</strong>? 🤫</li>
+<li>Tranquilli, non copiano i compiti a scuola! <em>“Rubano”</em> le idee geniali e i superpoteri della natura per inventare tecnologie pazzesche! 🚀</li>
+</ul>
 
 <div class="container w-100 m-0 p-0">
-    <div class="row "><div class="col "><p>Gli uccelli formano stormi giganteschi che danzano nel cielo.
-I pesci si muovono in banchi per confondere i predatori.</p>
-<p>Tutto questo <strong>senza</strong> avere un capo che dia gli ordini!</p>
+    <div class="row "><div class="col "><p><strong>Prima</strong>
+<img src="https://danysk.github.io/Slides-2019-OYM/img/500nozomi.jpg" alt="Treno proiettile"></p>
 </div>
-<div class="col "><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div class="col "><p><strong>Dopo</strong>
+<img src="https://danysk.github.io/Slides-2019-OYM/img/700series.jpg" alt="Treno proiettile nuovo"></p>
+</div>
+<div class="col "><p><strong>L’ispirazione!</strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/veQ2ilQrzMU?start=20?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 </div>
 </div>
 </div>
+<p>Il treno giapponese Shinkansen ha copiato il becco del <strong>Martin Pescatore</strong> per essere <em>super veloce</em> e non fare rumore!</p>
 </section><section>
-<h1 id="la-natura-come-maestra-">La Natura come Maestra 🌿</h1>
-<h3 id="biomimetica">(Biomimetica)</h3>
-<p>Spesso gli ingegneri “copiano” le idee dalla natura!</p>
-
-<div class="container w-100 m-0 p-0">
-    <div class="row "><div class="col "><p><img src="https://danysk.github.io/Slides-2019-OYM/img/500nozomi.jpg" alt="Treno proiettile"></p>
-</div>
-<div class="col "><p><img src="https://danysk.github.io/Slides-2019-OYM/img/700series.jpg" alt="Treno proiettile nuovo"></p>
-</div>
-</div>
-</div>
-<p>Il treno giapponese Shinkansen ha copiato il becco del <strong>Martin Pescatore</strong> per essere più veloce e silenzioso!</p>
-</section><section>
-<h1 id="e-i-piedi-del-geco-">E i piedi del Geco? 🦎</h1>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uhfXbSSrabw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
-<p>Ci hanno permesso di creare materiali super-appiccicosi!</p>
-</section><section>
-<h1 id="i-robot-prendono-appunti-">I Robot prendono appunti 📝</h1>
+<h1 id="torniamo-ai-robot-">Torniamo ai Robot! 🤖</h1>
 
 <div class="container w-100 m-0 p-0">
     <div class="row "><div class="col "><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tf7IEVTDjng?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
-<p>Robot come <strong>Spot</strong> imitano gli animali a quattro zampe.</p>
+<p>Robot come <strong>Spot</strong> <em>imitano</em> gli animali a quattro zampe</p>
 </div>
 <div class="col "><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rVlhMGQgDkY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
-<p>Robot come <strong>Atlas</strong> imitano noi umani!</p>
+<p>Robot come <strong>Atlas</strong> <em>imitano</em> noi umani!</p>
 </div>
 </div>
 </div>
 </section><section>
 <h1 id="la-magia-dei-droni-">La Magia dei Droni ✨</h1>
-<p>E se unissimo <strong>tanti piccoli robot</strong> facendoli muovere come uno sciame?</p>
-<p>Ecco che otteniamo meravigliose <strong>coreografie di droni</strong>! Disegnano figure luminose nel cielo, comportandosi esattamente come uno stormo di uccelli.</p>
+<p>E se unissimo <strong>tanti piccoli robot</strong> facendoli muovere come uno <em>sciame</em>?</p>
+<iframe width="1840" height="850" src="https://www.youtube.com/embed/MJmnSyzRUzQ" title="Shangai, ecco lo spettacolo dei droni di Capodanno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</section><section>
+<h1 id="come-parliamo-con-i-robot-">Come parliamo con i robot? 🤔</h1>
+<ul>
+<li>
+
+<span class="fragment ">
+  Immaginate di dover dare ordini a uno sciame intero… cosa direste ai robottini? 🗣️
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  Noi informatici siamo un po’ come dei <em>“sussurratori di robot”</em>, ma loro non parlano la nostra lingua! 💻
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  Dobbiamo inventare un modo <em>super ingegnoso</em> per farli collaborare, proprio come fanno le lucciole nel prato o i pesci nell’oceano! 🐟✨
+</span>
+</li>
+</ul>
 </section>
 
 <section data-noprocess="" data-shortcode-slide="" data-background-image="https://danysk.github.io/slides-2025-unito-progmob-collektive/idea-warning.png" data-background-opacity="0.3">
   
 <h1 id="un-problema-non-da-poco-">Un problema non da poco… 🚨</h1>
-<p>Programmare uno sciame è <strong>molto</strong> difficile!
-Se diamo a un robot un’istruzione sbagliata… <strong>tutti</strong> i robot sbaglieranno!</p>
-<h3 id="piccoli-errori-causano-disastri-globali"><em>Piccoli errori causano disastri globali!</em></h3>
+<p>Attenzione, però: dire a uno sciame cosa fare è <strong>difficilissimo</strong>!</p>
+<ul>
+<li>
+
+<span class="fragment ">
+  Se diamo a un robot il comando sbagliato… <strong>tutti</strong> i robot <em>copieranno l’errore</em>! 😱
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  <h3 id="un-piccolo-sbaglio--un-disastro-gigante-"><em>Un piccolo sbaglio = un disastro gigante!</em> 💥</h3>
+
+</span>
+</li>
+</ul>
 </section><section>
-<h1 id="aiutare-la-natura-con-la-tecnologia-">Aiutare la natura con la tecnologia 🌍</h1>
-<p>Gli sciami di droni possono collaborare tra loro per <strong>tracciare e proteggere gli animali selvatici</strong>!</p>
-<p>Si scambiano informazioni in tempo reale per trovare gli animali senza disturbarli, usando una vera e propria intelligenza collettiva.</p>
+<h1 id="il-nostro-trucco-segreto-">Il nostro trucco segreto! 🕵️‍♂️💡</h1>
+<ul>
+<li>
+
+<span class="fragment ">
+  Nel nostro laboratorio, abbiamo inventato una specie di <strong>“lingua aliena”</strong>!
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  Si chiama <strong>Aggregate Programming</strong> ed è un linguaggio speciale che i robot capiscono <em>al volo</em> per muoversi tutti insieme
+</span>
+</li>
+</ul>
+
+
+<span class="fragment ">
+  <video width="1080" height="450" autoplay="" controls="" loop=""><source data-src="video/macroswarm.webm" type="video/webm"></video>
+</span>
+
 </section><section>
-<h1 id="insegnare-ai-robot-a-muoversi-insieme-">Insegnare ai robot a muoversi insieme 💻</h1>
-<p>Con speciali programmi (come <strong>MacroSwarm</strong>), possiamo guidare migliaia di robot!</p>
-<video loop="" playsinline="" autoplay="" muted="" style="max-width: 1000px; display: inline-block;">
-  <source src="https://alchemistsimulator.github.io/home-animation.mp4" type="video/mp4">
-</video>
+<h1 id="facciamo-una-prova-">Facciamo una prova! 📏</h1>
+<ul>
+<li>
+
+<span class="fragment ">
+  Come fanno i robot a capire quanto sono lontani da un certo punto?
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  Proviamo a scoprirlo con un altro gioco! 🏃‍♂️🏃‍♀️
+</span>
+</li>
+</ul>
 </section><section>
-<h1 id="i-robottini-in-azione-">I robottini in azione! 🚀</h1>
+<h1 id="i-nostri-mini-robot-in-azione-">I nostri mini-robot in azione! 🚀</h1>
 <p><video width="1080" height="450" autoplay="" controls="" loop=""><source data-src="https://protelis.github.io/images/mapehd-small-h264.mp4" type="video/webm"></video></p>
-<p>Ognuno pensa per sé, ma tutti collaborano per lo stesso obiettivo!</p>
-</section><section>
-<h1 id="fino-alle-stelle-">Fino alle Stelle! 🪐</h1>
-<p>A cosa servirà tutto questo?
-In futuro, gli sciami di robot ci aiuteranno a <strong>colonizzare altri pianeti</strong>!
-Costruiranno basi spaziali lavorando insieme come un esercito di instancabili formiche marziane.</p>
-</section><section>
-<h1 id="morfogenesi-creare-la-forma-">Morfogenesi: Creare la Forma 🔵⬛</h1>
-<p>Proprio come le cellule del nostro corpo si uniscono per formare noi stessi…
-i robot possono decidere da soli come disporsi per creare figure giganti!</p>
-<img src="https://raw.githubusercontent.com/danysk/course-2026-micro-macro/master/content/img/shapes.png" alt="shapes" style="display:block;max-width:80%;height:auto;margin:auto;">
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-opacity="0.4" data-background-video="https://github.com/DanySK/slides-2024-acsos-imageonomics/raw/master/content/nonnadir.mkv" data-background-video-loop="true" data-background-video-muted="true">
+  
+<h1 id="ma-perché-lo-facciamo-a-cosa-serve-">Ma perché lo facciamo? A cosa serve? 🌍</h1>
+<ul>
+<li>
+
+
+<span class="fragment ">
+  Immaginate droni che lavorano in squadra per <strong>proteggere gli animali selvatici</strong>! 🦁🐘
+</span>
+
+</li>
+<li>
+
+
+<span class="fragment ">
+  Si scambiano messaggi <em>velocissimi</em> per trovare gli animali nel loro ambiente naturale senza spaventarli, come dei veri <em>super-agenti segreti</em> della natura! 🕵️‍♀️🍃
+</span>
+
+</li>
+<li>
+
+
+<span class="fragment ">
+  Possono anche aiutare a monitorare le foreste, a prevedere i disastri naturali o a consegnare medicine in posti difficili da raggiungere! 🌳🌪️💊
+</span>
+
+</li>
+</ul>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-opacity="0.4" data-background-video="https://nicolasfarabegoli.it/slides-2026-seminar-unijunior/video/martian.mp4" data-background-video-loop="true" data-background-video-muted="true">
+  
+<h1 id="verso-linfinito-e-oltre-">Verso l’infinito e oltre! 🪐🚀</h1>
+<ul>
+<li>
+
+<span class="fragment ">
+  Dove arriveremo in futuro?
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  Magari gli sciami di robot ci aiuteranno a <strong>esplorare e colonizzare altri pianeti</strong>!
+</span>
+</li>
+<li>
+
+<span class="fragment ">
+  Potrebbero costruire basi spaziali lavorando insieme come un esercito di <em>instancabili formiche marziane</em> 👽🏰
+</span>
+</li>
+</ul>
 </section><section>
 <h1 id="domande-">Domande? 🙋‍♂️🙋‍♀️</h1>
 <h3 id="grazie-per-lattenzione-e-benvenuti-nel-mondo-della-robotica">Grazie per l’attenzione e benvenuti nel mondo della robotica!</h3>
@@ -153,7 +301,7 @@ i robot possono decidere da soli come disporsi per creare figure giganti!</p>
 
 <a href="/slides-2026-seminar-unijunior/reveal-js/dist/print/" id="print-location" style="display: none;"></a>
 
-<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"custom_theme_options":{"enablesourcemap":true,"targetpath":"css/custom-theme.css"},"height":"1080","highlight_theme":"solarized-dark","history":true,"mermaid":[{}],"slide_number":true,"theme":"league","transition":"slide","transition_speed":"fast","width":"1920"}</script>
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"custom_theme_options":{"enablesourcemap":true,"targetpath":"css/custom-theme.css"},"height":"1080","highlight_theme":"solarized-light","history":true,"mermaid":[{}],"slide_number":true,"theme":"white","transition":"slide","transition_speed":"fast","width":"1920"}</script>
 <script type="application/json" id="reveal-hugo-page-params">null</script>
 
 <script src="/slides-2026-seminar-unijunior/reveal-js/dist/reveal.js"></script>
