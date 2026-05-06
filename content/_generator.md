@@ -56,11 +56,16 @@ outputs = ["Reveal"]
 
 ---
 
-# Proviamo Insieme!
+{{< slide background-color="#f6f0dc" >}}
 
-- Ora tocca a voi! Ci trasformeremo in un vero e proprio *sciame di lucciole*! 🌟
-- Ogni lucciola (cioè *ognuno di voi*!) dovrà seguire una regola molto semplice per "accendersi" o "spegnersi" 💡
-- **Attenzione:** è *vietato* parlare o guardare le lucciole lontane da voi! 🤫👀
+<div style="min-height: 58vh; display: flex; align-items: center; justify-content: center;">
+<div style="max-width: 90%; padding: 1.2em 1.4em; text-align: center; background: rgba(255, 255, 255, 0.42); border: 2px solid rgba(0, 0, 0, 0.08); border-radius: 24px; box-shadow: 0 0.35em 1.4em rgba(0, 0, 0, 0.08);">
+<h1 style="font-size: 2.35em; line-height: 1.05; margin: 0 0 0.55em;">Proviamo Insieme! ✨</h1>
+<p style="font-size: 1.22em; line-height: 1.45; margin: 0 0 0.8em;">Ora tocca a voi! Ci trasformeremo in un vero e proprio <em>sciame di lucciole</em>! 🌟</p>
+<p style="font-size: 1.22em; line-height: 1.45; margin: 0 0 0.8em;">Ogni lucciola (cioè <em>ognuno di voi</em>!) dovrà seguire una regola molto semplice per "accendersi" o "spegnersi" 💡</p>
+<p style="font-size: 1.22em; line-height: 1.45; margin: 0;"><strong>Attenzione:</strong> è <em>vietato</em> parlare o guardare le lucciole lontane da voi! 🤫👀</p>
+</div>
+</div>
 
 ---
 
@@ -134,17 +139,23 @@ Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 
 {{% fragment %}} <video width="1080" height="450" autoplay controls loop><source data-src="video/macroswarm.webm" type="video/webm" /></video> {{% /fragment %}}
 
---- 
+---
 
-# Facciamo una prova! 📏
-- {{% fragment %}} Come fanno i robot a capire quanto sono lontani da un certo punto? {{% /fragment %}}
-- {{% fragment %}} Proviamo a scoprirlo con un altro gioco! 🏃‍♂️🏃‍♀️ {{% /fragment %}}
+{{< slide background-color="#f6f0dc" >}}
+
+<div style="min-height: 58vh; display: flex; align-items: center; justify-content: center;">
+<div style="max-width: 90%; padding: 1.2em 1.4em; text-align: center; background: rgba(255, 255, 255, 0.42); border: 2px solid rgba(0, 0, 0, 0.08); border-radius: 24px; box-shadow: 0 0.35em 1.4em rgba(0, 0, 0, 0.08);">
+<h1 style="font-size: 2.35em; line-height: 1.05; margin: 0 0 0.55em;">Facciamo un gioco! 📏</h1>
+<p style="font-size: 1.22em; line-height: 1.45; margin: 0 0 0.8em;">Come fanno i robot a capire quanto sono lontani da un certo punto?</p>
+<p style="font-size: 1.22em; line-height: 1.45; margin: 0;">Proviamo a scoprirlo con un altro gioco! 🏃‍♂️🏃‍♀️</p></div>
+</div>
 
 ---
 
 # I nostri mini-robot in azione! 🚀
 
-<video width="1080" height="450" autoplay controls loop><source data-src="https://protelis.github.io/images/mapehd-small-h264.mp4" type="video/webm" /></video>
+<video width="480" height="853" autoplay controls loop><source data-src="video/IMG_8651.MOV" type="video/mp4" /></video>
+<video width="480" height="853" autoplay controls loop><source data-src="video/IMG_8649.MOV" type="video/mp4" /></video>
 
 ---
 
