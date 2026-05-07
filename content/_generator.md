@@ -114,8 +114,6 @@ E se unissimo **tanti piccoli robot** facendoli muovere come uno *sciame*?
 
 <iframe width="1840" height="850" src="https://www.youtube.com/embed/MJmnSyzRUzQ" title="Shangai, ecco lo spettacolo dei droni di Capodanno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-{{< youtube id="LpaSXwpKzGk" >}}
-
 ---
 
 # Come parliamo con i robot? 🤔
