@@ -46,7 +46,7 @@ outputs = ["Reveal"]
 - {{% fragment %}} **Si muovono tutti insieme!** Sembrano un'unica creatura gigante che fa una *danza perfetta* 🌊 {{% /fragment %}}
 - {{% fragment %}} **Nessun capo al comando!** Non c'è un boss o un direttore d'orchestra che *dà gli ordini* agli altri 🚫👑 {{% /fragment %}}
 - {{% fragment %}} **Zero parole, ma si capiscono al volo!** Usano segnali semplici, come *guardare* dove va l'amico o usare la *luce* 💡 {{% /fragment %}}
-- {{% fragment %}} **Regole facili, risultati pazzeschi!** Ognuno fa una cosa semplicissima, ma *unendo le forze* creano vere e proprie magie! ✨ {{% /fragment %}}
+- {{% fragment %}} **Regole facili, risultati pazzeschi!** Ognuno fa una cosa semplicissima, ma *unendo le forze* creano meravigliose coreografie! ✨ {{% /fragment %}}
 ---
 
 # Umani vs Sciami: Chi è più intelligente? 🧠🐜
@@ -162,12 +162,15 @@ Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 
 # Ma perché lo facciamo? A cosa serve? 🌍
 
+{{% fragment %}}
+-  Immaginate droni che lavorano in squadra per **monitorare gli animali selvatici**! 🦁🐘 
+    - per imparare le loro abitudini 
+    - e quindi proteggerli meglio! 🛡️
+    {{% /fragment %}}
 
-- {{% fragment %}} Immaginate droni che lavorano in squadra per **proteggere gli animali selvatici**! 🦁🐘 {{% /fragment %}}
-
-- {{% fragment %}} Si scambiano messaggi *velocissimi* per trovare gli animali nel loro ambiente naturale senza spaventarli{{% /fragment %}}
-
-- {{% fragment %}} Possono anche aiutare a monitorare le foreste, a prevedere i disastri naturali o a consegnare medicine in posti difficili da raggiungere! 🌳🌪️💊 {{% /fragment %}}
+{{% fragment %}}
+-  Possono anche aiutare a monitorare le foreste, a prevedere i disastri naturali o a consegnare medicine in posti difficili da raggiungere! 🌳🌪️💊 
+{{% /fragment %}}
 
 ---
 
@@ -185,4 +188,4 @@ Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 
 # Domande? 🙋‍♂️🙋‍♀️
 
-### Grazie per l'attenzione e benvenuti nel mondo della robotica!
+### Grazie per l'attenzione e benvenuti nel mondo della robotica di sciame!
