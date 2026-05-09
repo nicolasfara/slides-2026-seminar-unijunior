@@ -69,6 +69,81 @@ outputs = ["Reveal"]
 
 ---
 
+{{< slide background-color="#f6f0dc" >}}
+
+<style>
+.custom-dice { width: 150px; height: 150px; background-color: white; border-radius: 20px; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); cursor: pointer; margin: 0 auto; }
+.custom-dice .dot { background-color: #333; border-radius: 50%; width: 30px; height: 30px; justify-self: center; align-self: center; display: none; }
+.custom-dice .dot.center { grid-area: 2 / 2; }
+.custom-dice .dot.top-left { grid-area: 1 / 1; }
+.custom-dice .dot.top-right { grid-area: 1 / 3; }
+.custom-dice .dot.middle-left { grid-area: 2 / 1; }
+.custom-dice .dot.middle-right { grid-area: 2 / 3; }
+.custom-dice .dot.bottom-left { grid-area: 3 / 1; }
+.custom-dice .dot.bottom-right { grid-area: 3 / 3; }
+@keyframes shake-dice {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-15deg) scale(1.1); }
+  50% { transform: rotate(15deg) scale(1.1); }
+  75% { transform: rotate(-15deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+.custom-dice.rolling { animation: shake-dice 0.4s infinite; }
+</style>
+
+<div style="text-align: center; min-height: 58vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <h1 style="margin-bottom: 1em;">Tiriamo il Dado! 🎲</h1>
+  <div id="interactive-dice" class="custom-dice" onclick="rollInteractiveDice()">
+    <div class="dot top-left"></div>
+    <div class="dot top-right"></div>
+    <div class="dot middle-left"></div>
+    <div class="dot center"></div>
+    <div class="dot middle-right"></div>
+    <div class="dot bottom-left"></div>
+    <div class="dot bottom-right"></div>
+  </div>
+  <p style="margin-top: 1.5em; font-size: 1.2em; cursor: pointer;" onclick="rollInteractiveDice()">Clicca sul dado per lanciare!</p>
+</div>
+
+<script>
+const diceDotPatterns = [
+  [],
+  ['center'],
+  ['top-right', 'bottom-left'],
+  ['top-right', 'center', 'bottom-left'],
+  ['top-left', 'top-right', 'bottom-left', 'bottom-right'],
+  ['top-left', 'top-right', 'center', 'bottom-left', 'bottom-right'],
+  ['top-left', 'top-right', 'middle-left', 'middle-right', 'bottom-left', 'bottom-right']
+];
+function setInteractiveDice(num) {
+  const dice = document.getElementById('interactive-dice');
+  if (!dice) return;
+  dice.querySelectorAll('.dot').forEach(dot => dot.style.display = 'none');
+  diceDotPatterns[num].forEach(pos => {
+    const d = dice.querySelector('.dot.' + pos);
+    if (d) d.style.display = 'block';
+  });
+}
+setTimeout(() => setInteractiveDice(6), 100);
+function rollInteractiveDice() {
+  const dice = document.getElementById('interactive-dice');
+  if (!dice || dice.classList.contains('rolling')) return;
+  dice.classList.add('rolling');
+  let rolls = 0;
+  const interval = setInterval(() => {
+    setInteractiveDice(Math.floor(Math.random() * 6) + 1);
+    rolls++;
+    if (rolls > 15) {
+      clearInterval(interval);
+      dice.classList.remove('rolling');
+      setInteractiveDice(Math.floor(Math.random() * 6) + 1);
+    }
+  }, 50);
+}
+</script>
+
+---
+
 # La Natura come Maestra 🌿 
 
 - Lo sapevate che gli ingegneri sono dei veri e propri **"copioni"**? 🤫
