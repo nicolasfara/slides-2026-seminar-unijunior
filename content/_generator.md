@@ -72,73 +72,45 @@ outputs = ["Reveal"]
 {{< slide background-color="#f6f0dc" >}}
 
 <style>
-.custom-dice { width: 150px; height: 150px; background-color: white; border-radius: 20px; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); cursor: pointer; margin: 0 auto; }
-.custom-dice .dot { background-color: #333; border-radius: 50%; width: 30px; height: 30px; justify-self: center; align-self: center; display: none; }
-.custom-dice .dot.center { grid-area: 2 / 2; }
-.custom-dice .dot.top-left { grid-area: 1 / 1; }
-.custom-dice .dot.top-right { grid-area: 1 / 3; }
-.custom-dice .dot.middle-left { grid-area: 2 / 1; }
-.custom-dice .dot.middle-right { grid-area: 2 / 3; }
-.custom-dice .dot.bottom-left { grid-area: 3 / 1; }
-.custom-dice .dot.bottom-right { grid-area: 3 / 3; }
-@keyframes shake-dice {
-  0% { transform: rotate(0deg) scale(1); }
-  25% { transform: rotate(-15deg) scale(1.1); }
-  50% { transform: rotate(15deg) scale(1.1); }
-  75% { transform: rotate(-15deg) scale(1.1); }
-  100% { transform: rotate(0deg) scale(1); }
+.turn-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.1s;
 }
-.custom-dice.rolling { animation: shake-dice 0.4s infinite; }
+.turn-button:active {
+  transform: scale(0.95);
+}
 </style>
 
 <div style="text-align: center; min-height: 58vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-  <h1 style="margin-bottom: 1em;">Tiriamo il Dado! 🎲</h1>
-  <div id="interactive-dice" class="custom-dice" onclick="rollInteractiveDice()">
-    <div class="dot top-left"></div>
-    <div class="dot top-right"></div>
-    <div class="dot middle-left"></div>
-    <div class="dot center"></div>
-    <div class="dot middle-right"></div>
-    <div class="dot bottom-left"></div>
-    <div class="dot bottom-right"></div>
-  </div>
-  <p style="margin-top: 1.5em; font-size: 1.2em; cursor: pointer;" onclick="rollInteractiveDice()">Clicca sul dado per lanciare!</p>
+  <h1 style="margin-bottom: 0.5em;">Ora Giochiamo! 🎲</h1>
+  <p style="font-size: 1.25em; margin-bottom: 1em;"><strong>Partiamo tutti spenti, solo qualcuno di voi si accende!</strong></p>
+  <ul style="font-size: 1.25em; text-align: left; line-height: 1.2; margin: 0 auto 1.5em auto; max-width: 90%; display: inline-block; background: rgba(255, 255, 255, 0.42); padding: 1em 1.5em 1em 2.5em; border-radius: 15px; box-shadow: 0 0.35em 1em rgba(0, 0, 0, 0.05);">
+    <li style="margin-bottom: 0.3em;"><strong>Regola 1:</strong> Chi è acceso in questo turno, si spegne in quello successivo</li>
+    <li style="margin-bottom: 0.3em;"><strong>Regola 2:</strong> Se sei spento e almeno uno dei tuoi vicini è acceso, segna nel foglio il numero 2</li>
+    <li style="margin-bottom: 0.3em;"><strong>Regola 3:</strong> Se sei spento e nessuno dei tuoi vicini è acceso, riduci di 1 il numero. Se il numero che hai sul foglio è 0 ti accendi in questo turno!</li>
+  </ul>
+  
+  <h1 id="turn-counter" style="margin-top: 0.2em; font-size: 4em; font-weight: bold; color: #333;">Turno: 1</h1>
+  <button class="turn-button" onclick="nextTurn()">Prossimo Turno ➡️</button>
 </div>
 
 <script>
-const diceDotPatterns = [
-  [],
-  ['center'],
-  ['top-right', 'bottom-left'],
-  ['top-right', 'center', 'bottom-left'],
-  ['top-left', 'top-right', 'bottom-left', 'bottom-right'],
-  ['top-left', 'top-right', 'center', 'bottom-left', 'bottom-right'],
-  ['top-left', 'top-right', 'middle-left', 'middle-right', 'bottom-left', 'bottom-right']
-];
-function setInteractiveDice(num) {
-  const dice = document.getElementById('interactive-dice');
-  if (!dice) return;
-  dice.querySelectorAll('.dot').forEach(dot => dot.style.display = 'none');
-  diceDotPatterns[num].forEach(pos => {
-    const d = dice.querySelector('.dot.' + pos);
-    if (d) d.style.display = 'block';
-  });
-}
-setTimeout(() => setInteractiveDice(6), 100);
-function rollInteractiveDice() {
-  const dice = document.getElementById('interactive-dice');
-  if (!dice || dice.classList.contains('rolling')) return;
-  dice.classList.add('rolling');
-  let rolls = 0;
-  const interval = setInterval(() => {
-    setInteractiveDice(Math.floor(Math.random() * 6) + 1);
-    rolls++;
-    if (rolls > 15) {
-      clearInterval(interval);
-      dice.classList.remove('rolling');
-      setInteractiveDice(Math.floor(Math.random() * 6) + 1);
-    }
-  }, 50);
+let currentTurn = 1;
+function nextTurn() {
+  currentTurn++;
+  const counter = document.getElementById('turn-counter');
+  if (counter) counter.innerText = 'Turno: ' + currentTurn;
 }
 </script>
 
@@ -202,26 +174,21 @@ E se unissimo **tanti piccoli robot** facendoli muovere come uno *sciame*?
 
 Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 - {{% fragment %}} Se diamo a un robot il comando sbagliato... **tutti** i robot *copieranno l'errore*! 😱 {{% /fragment %}}
-- {{% fragment %}} ### *Un piccolo sbaglio = un disastro gigante!* 💥 {{% /fragment %}}
+- {{% fragment %}} ### *Un piccolo sbaglio = un grande problema* 💥 {{% /fragment %}}
+
+---
+
+# Ecco un "grande" problema reale 😱
+
+<iframe width="1071" height="602" src="https://www.youtube.com/embed/m923avGEaXQ" title="Millennium Bridge &#39;wobbled too much&#39; when it opened" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
 # Il nostro trucco segreto! 🕵️‍♂️💡
-- {{% fragment %}}  Nel nostro laboratorio, abbiamo inventato una specie di **"lingua aliena"**! {{% /fragment %}}
+- {{% fragment %}}  Nel nostro laboratorio, abbiamo inventato una specie di **"lingua speciale"**! {{% /fragment %}}
 - {{% fragment %}} Si chiama **Aggregate Programming** ed è un linguaggio speciale che i robot capiscono *al volo* per muoversi tutti insieme {{% /fragment %}}
 
 {{% fragment %}} <video width="1080" height="450" autoplay controls loop><source data-src="video/macroswarm.webm" type="video/webm" /></video> {{% /fragment %}}
-
----
-
-{{< slide background-color="#f6f0dc" >}}
-
-<div style="min-height: 58vh; display: flex; align-items: center; justify-content: center;">
-<div style="max-width: 90%; padding: 1.2em 1.4em; text-align: center; background: rgba(255, 255, 255, 0.42); border: 2px solid rgba(0, 0, 0, 0.08); border-radius: 24px; box-shadow: 0 0.35em 1.4em rgba(0, 0, 0, 0.08);">
-<h1 style="font-size: 2.35em; line-height: 1.05; margin: 0 0 0.55em;">Facciamo un gioco! 📏</h1>
-<p style="font-size: 1.22em; line-height: 1.45; margin: 0 0 0.8em;">Come fanno i robot a capire quanto sono lontani da un certo punto?</p>
-<p style="font-size: 1.22em; line-height: 1.45; margin: 0;">Proviamo a scoprirlo con un altro gioco! 🏃‍♂️🏃‍♀️</p></div>
-</div>
 
 ---
 
@@ -237,15 +204,11 @@ Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 
 # Ma perché lo facciamo? A cosa serve? 🌍
 
-{{% fragment %}}
 -  Immaginate droni che lavorano in squadra per **monitorare gli animali selvatici**! 🦁🐘 
     - per imparare le loro abitudini 
     - e quindi proteggerli meglio! 🛡️
-    {{% /fragment %}}
-
-{{% fragment %}}
 -  Possono anche aiutare a monitorare le foreste, a prevedere i disastri naturali o a consegnare medicine in posti difficili da raggiungere! 🌳🌪️💊 
-{{% /fragment %}}
+
 
 ---
 
@@ -263,4 +226,13 @@ Attenzione, però: dire a uno sciame cosa fare è **difficilissimo**!
 
 # Domande? 🙋‍♂️🙋‍♀️
 
-### Grazie per l'attenzione e benvenuti nel mondo della robotica di sciame!
+---
+
+{{< slide background-color="#f6f0dc" >}}
+
+<div style="min-height: 58vh; display: flex; align-items: center; justify-content: center;">
+<div style="max-width: 90%; padding: 1.2em 1.4em; text-align: center; background: rgba(255, 255, 255, 0.42); border: 2px solid rgba(0, 0, 0, 0.08); border-radius: 24px; box-shadow: 0 0.35em 1.4em rgba(0, 0, 0, 0.08);">
+<h1 style="font-size: 2.35em; line-height: 1.05; margin: 0 0 0.55em;">Facciamo un altro gioco! 📏</h1>
+<p style="font-size: 1.22em; line-height: 1.45; margin: 0 0 0.8em;">Come fanno i robot a capire quanto sono lontani da un certo punto?</p>
+<p style="font-size: 1.22em; line-height: 1.45; margin: 0;">Proviamo a scoprirlo con un altro gioco! 🏃‍♂️🏃‍♀️</p></div>
+</div>
